@@ -1,0 +1,28 @@
+meta:
+  title: "Jacob Paulson"
+  description: "Scientist, Maker, and Musician living in Boston."
+  facebook_image: ""  # /img/facebook.png
+  twitter_image: ""  # /img/twitter.png
+  image: ""  # /img/share.png
+  twitter_handle: ""  # @minimill_co
+  domain: "jacobpaulson.com"
+  url: "http://jacobpaulson.com"
+  google_analytics_id: "" # UA-66637918-1
+  theme_color: "#222222"
+
+name: ""
+markdown: redcarpt
+highlighter: pygments
+permalink: "/:categories/:title/"
+
+gems:
+  - jekyll-redirect-from
+
+exclude:
+  - node_modules
+  - Gulpfile.js
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - README.md
+  - LICENSE.md
