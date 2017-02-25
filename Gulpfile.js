@@ -240,9 +240,9 @@ gulp.task('clean', function(cb) {
 
 gulp.task('deploy', ['build:optimized'], function() {
   return gulp.src('')
-    .pipe(shell('rsync -avuzh _site/* dan:/srv/jacob.schlosser.io/public_html/'))
+    .pipe(shell('rsync -avuzh _site/* dan:/srv/jacobpaulson.com/public_html/'))
     .on('finish', function() {
-      process.stdout.write('Deployed to jacob.schlosser.io\n');
+      process.stdout.write('Deployed to jacobpaulson.com\n');
     });
 });
 
