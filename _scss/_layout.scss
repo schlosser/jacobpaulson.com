@@ -2,14 +2,25 @@ $content-width: 60rem;
 
 footer {
   display: flex;
+  align-items: center;
+  padding: 2rem 0 5rem;
   margin: 0 0 2rem;
 
-  .spacer {
+  .profile {
+    width: 10rem;
+    figure {
+      border-radius: 50%;
+    }
+  }
+
+  .copyright {
     flex: 1;
   }
 
   .nav-items {
     display: flex;
+    justify-content: flex-end;
+    flex: 1;
 
     p {
       margin-left: 2rem;

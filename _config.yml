@@ -8,7 +8,7 @@ meta:
   domain: "jacobpaulson.com"
   url: "http://jacobpaulson.com"
   google_analytics_id: "" # UA-66637918-1
-  theme_color: "#222222"
+  theme_color: "#FFFFFF"
 
 name: ""
 markdown: redcarpt

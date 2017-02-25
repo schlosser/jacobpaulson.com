@@ -1,9 +1,11 @@
 ---
 layout: base
 ---
-{% include header.html %}
 <div class="scrim"></div>
-{{ content }}
+<div class="main">
+    {{ content }}
+    {% include footer.html %}
+</div>
 <script type="text/javascript" src="/js/lib/progressive-image.js"></script>
 <script type="text/javascript">
     // Enables progressive, responsive images.
@@ -12,4 +14,3 @@ layout: base
         new ProgressiveImage(figures[i]);
     }
 </script>
-{% include footer.html %}

@@ -27,6 +27,17 @@ $bar-length: 100rem;
   }
 }
 
+.main, .scrim {
+  background: radial-gradient(
+    circle,
+    rgba($black, 0.15),
+    rgba($black, 0.15) 10%,
+    $transparent 10%,
+    $transparent
+  );
+  background-size: 20px 20px;
+}
+
 .post {
   padding: 5rem 0;
 
@@ -64,6 +75,11 @@ $bar-length: 100rem;
     top: 0;
     transform-origin: left center;
     z-index: 1;
+  }
+
+  h1 {
+    position: relative;
+
   }
 
   h1, h2 {
