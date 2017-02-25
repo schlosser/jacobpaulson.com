@@ -46,6 +46,10 @@ footer {
     padding: 0 1rem 2rem;
   }
 
+  .col-1 {
+    width: 8.33%;
+  }
+
   .col-2 {
     width: 16.66%;
   }
@@ -56,6 +60,10 @@ footer {
 
   .col-4 {
     width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
   }
 
   .col-6 {
@@ -104,5 +112,9 @@ header {
         padding-top: 1rem;
       }
     }
+  }
+
+  footer .profile {
+    width: 5rem;
   }
 }

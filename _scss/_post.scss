@@ -27,26 +27,78 @@ $bar-length: 100rem;
   }
 }
 
-.main, .scrim {
-  background: radial-gradient(
-    circle,
-    rgba($black, 0.15),
-    rgba($black, 0.15) 10%,
-    $transparent 10%,
-    $transparent
-  );
-  background-size: 20px 20px;
-}
-
 .post {
   padding: 5rem 0;
+  position: relative;
+
+  &::before {
+    background-color: $orange;
+    width: 4px;
+    display: block;
+    left: 2rem;
+    top: 0;
+    bottom: 0;
+    content: ' ';
+    position: absolute;
+    z-index: 1;
+  }
 
   &.hero {
     padding: 7rem 0;
   }
 
+  .description, h2, .h2, h1, .h1, figure {
+    position: relative;
+    z-index: 200;
+  }
+
+  .description {
+    padding: 2rem;
+    border: 4px solid $orange;
+  }
+
+  .h1, .h2, .description {
+    background-color: $white;
+  }
+
   .description, .post-content {
     animation: 1.1s linear hide, 0.5s 1.1s ease fade-in-up;
+  }
+
+  .row.multi [class^="col-"] {
+    position: relative;
+
+    // &::before {
+    //   left: 3rem;
+    //   right: 3rem;
+    //   height: 4px;
+    //   background-color: $orange;
+    //   content: ' ';
+    //   top: 0;
+    //   position: absolute;
+    //   display: block;
+    // }
+
+    &::after {
+      right: 0;
+      left: 0;
+      height: 4px;
+      top: 50%;
+      transform: translateY(-1rem);
+      margin-top: -2px;
+      position: absolute;
+      display: block;
+      content: ' ';
+      background-color: $orange;
+    }
+
+    &:first-child::after {
+      left: 2rem;
+    }
+
+    &:last-child::after {
+      right: 2rem;
+    }
   }
 }
 
