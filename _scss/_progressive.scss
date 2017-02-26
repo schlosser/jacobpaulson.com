@@ -1,3 +1,4 @@
+
 body {
   .scrim {
     background-color: $white;
@@ -20,6 +21,7 @@ body {
 
 
 .progressive-image {
+  background-color: $white;
   overflow: hidden;
   position: relative;
   transform-origin: 0 0;
