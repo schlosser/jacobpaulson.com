@@ -32,7 +32,7 @@ $bar-length: 100rem;
   position: relative;
 
   &::before {
-    background-color: $orange;
+    background-color: $blue;
     bottom: 0;
     content: ' ';
     display: block;
@@ -53,7 +53,7 @@ $bar-length: 100rem;
   }
 
   .description {
-    border: 4px solid $orange;
+    border: 4px solid $blue;
     padding: 2rem;
   }
 
@@ -69,7 +69,7 @@ $bar-length: 100rem;
     position: relative;
 
     &::after {
-      background-color: $orange;
+      background-color: $blue;
       content: ' ';
       display: block;
       height: 4px;
