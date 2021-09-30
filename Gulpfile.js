@@ -312,7 +312,7 @@ gulp.task(
 
 gulp.task(
   "deploy",
-  gulp.series("build:optimized", function () {
+  gulp.series("build:optimized", function (done) {
     cp.exec(
       "chmod -R 775 _site && rsync -avuzh _site/* dan:/srv/jacobpaulson.com/public_html/",
       function () {
